@@ -9,6 +9,15 @@ const post = {
       type: 'string',
     },
     {
+      name: 'short_description',
+      title: 'ShortDescription',
+      type: 'string',
+      options:{
+        maxLength:100,
+      }
+    },
+    
+    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -17,12 +26,12 @@ const post = {
         maxLength: 96,
       },
     },
-    {
-      name: 'author',
-      title: 'Author',
-      type: 'reference',
-      to: {type: 'author'},
-    },
+    // {
+    //   name: 'author',
+    //   title: 'Author',
+    //   type: 'reference',
+    //   to: {type: 'author'},
+    // },
     {
       name: 'mainImage',
       title: 'Main image',
@@ -38,17 +47,28 @@ const post = {
         }
       ]
     },
-    {
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
-    },
+    // {
+    //   name: 'categories',
+    //   title: 'Categories',
+    //   type: 'array',
+    //   of: [{type: 'reference', to: {type: 'category'}}],
+    // },
     {
       name: 'publishedAt',
       title: 'Published at',
       type: 'datetime',
     },
+    {
+      name: 'publishedDate',
+      title: 'Published Date',
+      type: 'string',
+    },
+    {
+      name: 'reatTime',
+      title: 'Read Time',
+      type: 'string',
+    },
+
     {
       name: 'body',
       title: 'Body',
@@ -56,16 +76,6 @@ const post = {
     },
   ],
 
-  preview: {
-    select: {
-      title: 'title',
-      author: 'author.name',
-      media: 'mainImage',
-    },
-    prepare(selection) {
-      const {author} = selection
-      return {...selection, subtitle: author && `by ${author}`}
-    },
-  },
+  
 }
 export default post
