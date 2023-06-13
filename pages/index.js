@@ -15,7 +15,7 @@ return (
 <main className=" px-6 my-4">
 
 <h2 className="text-center text-3xl font-bold m-4">Featured Blogs</h2>
-<div className="h-64 px-8 md:px-32">
+<div className="h-64 px-8 md:px-32 !cursor-pointer">
 
 <Crousel/>
 </div>

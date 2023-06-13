@@ -5,7 +5,7 @@ import { urlFor } from '@/sanityClient';
 
 export default function FeaturedCard(props) {
   return (
-    <div className='flex items-center justify-between h-full space-x-2 p-2'>
+    <div className='flex items-center justify-around h-full space-x-2 p-2'>
 
     <div className='md:w-1/4 '>
 

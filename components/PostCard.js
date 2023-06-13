@@ -2,12 +2,18 @@
 
 import { Card } from 'flowbite-react';
 import { urlFor } from '@/sanityClient';
-
+import { useRouter } from 'next/router';
 export default function PostCard(props) {
+  const router = useRouter()
+  function handleClick(){
+    router.push(`/Posts/${props.id}`)
+
+  }
   return (
     <div className='md:w-3/12 m-5 w-3/4'>
 
-    <Card
+    <Card onClick={handleClick}
+    className='cursor-pointer'
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc = {urlFor(props.image).url()}
     >
