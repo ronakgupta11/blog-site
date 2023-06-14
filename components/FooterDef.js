@@ -11,7 +11,7 @@ export default function FooterDef() {
         <Footer.Divider />
         <div className="w-full sm:flex sm:items-center sm:justify-between">
           <Footer.Copyright
-            by="Flowbite™"
+            by="Ronak Gupta"
             href="#"
             year={2022}
           />
