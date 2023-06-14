@@ -3,9 +3,9 @@ import React from 'react'
 const NavbarDef = () => {
   return (
     
-<nav class="bg-white border-gray-200 dark:bg-gray-900">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-  <a href="https://flowbite.com/" class="flex items-center">
+<nav class="bg-gray-50 border-gray-200 dark:bg-gray-900">
+  <div class="max-w-screen-xl text-center font-bold text-lg text-gray-700 mx-auto p-4">
+  {/* <a href="https://flowbite.com/" class="flex items-center">
       <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
       <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
   </a>
@@ -31,7 +31,10 @@ const NavbarDef = () => {
         <input type="text" id="search-navbar" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..."/>
       </div>
 
-    </div>
+    </div> */}
+    <a href='/'>
+      Name Blog
+      </a>
   </div>
 </nav>
 

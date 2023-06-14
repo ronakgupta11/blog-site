@@ -23,9 +23,9 @@ export default function PostCard(props) {
         </p>
       </h5>
       <p className="font-normal text-gray-700 dark:text-gray-400">
-        <p>
+        
           {props.desc}
-        </p>
+        
       </p>
       <p className='text-xs text-gray-500'>
         

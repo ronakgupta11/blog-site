@@ -21,8 +21,8 @@ export default function FeaturedCard(props) {
         </p>
       </h5>
       <p className="font-normal text-sm md:text-lg text-gray-700 dark:text-gray-400">
-        <p>
-{props.desc}        </p>
+        
+{props.desc}        
       </p>
       </div>
     

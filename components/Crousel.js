@@ -13,8 +13,8 @@ const Crousel = () => {
 
   const renderedCard = featuredPosts?.map((p)=>{
     return(
-      <div className=" h-full  bg-gray-50 items-center justify-center dark:text-white">
-        <FeaturedCard title = {p.post.title} image = {p.post.mainImage} desc = {p.post.short_description} id ={p.post.slug.current} key ={p.post.slug.current}/>
+      <div  key ={p.post.slug.current} className=" h-full  bg-gray-50 items-center justify-center dark:text-white">
+        <FeaturedCard title = {p.post.title} image = {p.post.mainImage} desc = {p.post.short_description} id ={p.post.slug.current}/>
       </div>
 
     )
